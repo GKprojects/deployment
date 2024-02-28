@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: angular
+  name: java-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: angular
+      app: java
   template:
     metadata:
       labels:
-        app: angular
+        app: java
     spec:
       imagePullSecrets:
         - name: docker-secret
@@ -18,5 +18,5 @@ spec:
         - name: angular
           image: goksatexpleo/javacoffeshop:1
           ports:
-            - containerPort: 80
+            - containerPort: 8083
     restartPolicy: Always
