@@ -16,7 +16,7 @@ spec:
         - name: docker-secret
       containers:
         - name: angular
-          image: goksatexpleo/javacoffeshop:16
+          image: goksatexpleo/javacoffeshop:18
           ports:
             - containerPort: 8083
     restartPolicy: Always
