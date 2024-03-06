@@ -12,6 +12,7 @@ spec:
       labels:
         app: java
     spec:
+      restartPolicy: Always
       imagePullSecrets:
         - name: docker-secret
       containers:
@@ -19,4 +20,3 @@ spec:
           image: goksatexpleo/javacoffeshop:72
           ports:
             - containerPort: 8083
-    restartPolicy: Always
