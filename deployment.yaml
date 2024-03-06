@@ -16,7 +16,7 @@ spec:
       imagePullSecrets:
         - name: docker-secret
       containers:
-        - name: angular
+        - name: java
           image: goksatexpleo/javacoffeshop:82
           ports:
             - containerPort: 8083
