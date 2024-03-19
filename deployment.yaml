@@ -17,6 +17,6 @@ spec:
         - name: docker-secret
       containers:
         - name: java
-          image: goksatexpleo/javacoffeshop:86
+          image: goksatexpleo/javacoffeshop:87
           ports:
             - containerPort: 8083
